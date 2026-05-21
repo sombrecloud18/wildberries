@@ -1,10 +1,11 @@
 const getGoods = () => {
   const links = document.querySelectorAll(".navigation-link");
   const more = document.querySelector(".more");
+
   if (more) {
     more.addEventListener("click", (event) => {
       event.preventDefault();
-      getData(null, null);
+      getData();
     });
   }
 
